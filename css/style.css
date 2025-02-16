@@ -1,0 +1,261 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Georgia", serif;
+}
+
+body {
+    background-color: #f5d6c6; 
+    overflow: hidden; 
+    min-height: 100vh;
+    padding: 20px;
+}
+
+
+.conteiner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: relative;
+    padding: 40px 10vw;
+    gap: 30%;
+}
+
+.conteiner > *:first-child {
+    margin-top: 10%;
+}
+
+.container {
+    flex: 1; 
+}
+
+.conteiner-on {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    width: 100%; 
+    height: auto; 
+    margin: 20px 0; 
+}
+
+
+.container-two{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: fit-content;
+    height: fit-content;
+    gap: 25px;
+    overflow: hidden; 
+
+}
+
+.container-two {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    width: 100%; 
+    max-width: 1200px; 
+    height: auto; 
+    gap: 25px;
+    overflow: visible; 
+    
+}
+
+/* Estilos para os Cards */
+.card, .card2 , .card5, .card7, .card9{
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(15px);
+    border-radius: 30px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    overflow: hidden;
+    
+}
+
+.card {
+    width: 80vw;
+    max-width: 900px;
+    height: auto;
+    padding: 100px;
+    position: relative;
+    top: 0;
+}
+
+.card2 {
+    width: auto;
+    max-width: 900px;
+    height: auto;
+    padding: 40px;
+    text-align: left;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-top: 40px; 
+}
+
+.card p, .card2 p, .card5 p, .card9 p{
+    font-size: clamp(0.8rem, 2vw, 1.2rem);
+    color: #9b1b30;
+    margin-top: 15px;
+    text-align: justify; 
+    white-space: normal; 
+    word-wrap: break-word; 
+    overflow-wrap: break-word;
+    line-height: 1.5; 
+}
+
+
+.card3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+
+.card4 {
+    width: 350px; 
+    height: 350px; 
+    border-radius: 50%; 
+    overflow: hidden; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card5 {
+    width: 50vw;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    justify-content: flex-start;
+    height: auto;
+    padding: 30px;
+    text-align: center;
+    margin-top: 40px; 
+    gap: 15%;
+}
+
+.card4 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+.sub-card5 {
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    gap: 15px; 
+    text-decoration: none;
+}
+
+.sub-card5 a {
+    text-decoration: none; 
+    color: #9b1b30; 
+}
+
+.sub-card5 a:hover {
+    text-decoration: underline; 
+}
+
+.img{
+    width: 30px;
+    height: 30px;
+    margin-top: 5%;
+}
+
+.card6 {
+    width: 80vw;
+    max-width: 900px;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+    gap: 20px; 
+}
+
+.sub-card6 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    width: calc(33.33% - 20px); 
+    min-width: 250px; 
+}
+
+.sub-card6 h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.card7 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 66px;
+    justify-content: center;
+    padding: 28px 36px;
+}
+
+.card7 img {
+    width: 100%;
+    max-width: 80px;
+    height: auto;
+}
+
+
+.card8{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 50px;
+}
+
+.sub-card8{
+    justify-items: center;
+    padding: auto;
+}
+
+.hard {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: #d6a2a2;
+    color: #fff;
+    text-align: center;
+    border-top: 3px solid #9b1b30;
+}
+
+.sub-hard {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.sub-hard img {
+    width: 24px; 
+    height: 24px;
+}
+
+.sub-hard a:hover {
+    color: #d4d4d4; 
+}

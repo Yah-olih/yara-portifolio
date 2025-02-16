@@ -1,0 +1,49 @@
+/* Tipografia */
+.title, .subtitle, .description, .author {
+    white-space: nowrap; /* Evita quebra de linha */
+    overflow: hidden; /* Esconde o conteúdo que passar do limite */
+    text-overflow: ellipsis; /* Adiciona "..." caso ultrapasse */
+    max-width: 90%; /* Impede que o texto ultrapasse a div */
+}
+
+.title {
+    font-size: clamp(2rem, 5vw, 4rem);
+    font-weight: bold;
+    color: #9b1b30;
+    text-align: center;
+    margin: 0;
+}
+
+.subtitle {
+    font-size: clamp(1rem, 3vw, 2rem);
+    font-weight: bold;
+    color: #9b1b30;
+}
+
+.description {
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
+    font-weight: bold;
+    color: #9b1b30;
+    margin-top: 10px;
+}
+
+.author {
+    font-size: clamp(0.8rem, 2vw, 1.2rem);
+    color: #9b1b30;
+    margin-top: 15px;
+}
+
+.title-card {
+    font-size: clamp(1rem, 3vw, 2rem);
+    font-weight: bold;
+    color: #9b1b30;
+    text-align: center;
+    margin: 0;
+}
+
+/* Linha horizontal estilizada */
+hr {
+    width: 60%;
+    border: 1px solid #9b1b30;
+    margin: 15px auto;
+}
