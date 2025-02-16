@@ -1,9 +1,8 @@
-/* Tipografia */
 .title, .subtitle, .description, .author {
-    white-space: nowrap; /* Evita quebra de linha */
-    overflow: hidden; /* Esconde o conteúdo que passar do limite */
-    text-overflow: ellipsis; /* Adiciona "..." caso ultrapasse */
-    max-width: 90%; /* Impede que o texto ultrapasse a div */
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis; 
+    max-width: 90%; 
 }
 
 .title {
@@ -41,7 +40,6 @@
     margin: 0;
 }
 
-/* Linha horizontal estilizada */
 hr {
     width: 60%;
     border: 1px solid #9b1b30;
